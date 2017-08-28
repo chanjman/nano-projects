@@ -80,6 +80,7 @@ module Enumerable
 end
 
 ary = [17, 21, 13, 4, 56, 8]
+ap ary.my_each
 ap ary.my_each { |x| p x + 1 }
 ap ary.my_each_with_index { |x, idx| p "#{x} index is #{idx}" }
 ap ary.my_select { |x| x > 17 }
